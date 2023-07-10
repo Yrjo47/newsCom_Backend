@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3001;
 const mysql = require('mysql');
 const cors = require('cors')
 
@@ -60,6 +61,6 @@ app.get('/homeNews', (req, res) => {
 });
 
 
-app.listen(3001, () => {
-    console.log('Running on 3001');
+app.listen(port, () => {
+    console.log(`The app listening on port ${port}`);
 });
