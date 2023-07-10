@@ -1,4 +1,3 @@
-const e = require('express');
 const express = require('express');
 const app = express();
 const mysql = require('mysql');
@@ -8,10 +7,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    user: 'root',
-    host: 'localhost',
-    password: '',
-    database: 'newscom'
+    user: 'udjwkyvfzwkmhnnh',
+    host: 'bdgqhpsyuk8yrmnepo8z-mysql.services.clever-cloud.com',
+    password: 'l55ejIEDc2LSuTqXKSqM',
+    database: 'bdgqhpsyuk8yrmnepo8z'
 });
 
 app.post('/feedback', (req, res) => {
